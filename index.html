@@ -1,0 +1,248 @@
+<head>
+    <title> Jakob Fuglsang - Forside</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/lib/w3.css">
+</head>
+
+<body id="top">
+        <nav >
+        <center>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#port"> Portfolio</a></li>
+            <li><a href="#kontakt"> Contact</a></li>
+        </ul>
+        </center>
+    </nav>
+    
+    <header>
+    <h1> Jakob Fuglsang</h1>
+    <h2> Mediegrafiker</h2>
+    </header>
+    
+    
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">Design</div>
+  <img src="images/Slide_1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">Web</div>
+  <img src="images/Slide_2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">Billede</div>
+  <img src="images/Slide_3.png" style="width:100%">
+</div>
+        
+<div class="mySlides fade">
+  <div class="numbertext">Typografi</div>
+  <img src="images/Slide_4.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+    
+    </script>
+    
+    <div class="thumbnail" id="first">
+        <img src="images/Graphic.png">
+        <div class="overlay"><div class="portfoliobutton"><center><a href="#"> Portfolio</a></center></div></div>
+    </div>
+    <div class="thumbnail">
+        <img src="images/picture.png">
+        <div class="overlay"><div class="portfoliobutton"><center><a href="#"> Portfolio</a></center></div></div>
+    </div>
+    <div class="thumbnail">
+        <img src="images/Typografi.png">
+        <div class="overlay"><div class="portfoliobutton"><center><a href="#"> Portfolio</a></center></div></div>
+    </div>
+    <div class="thumbnail">
+        <img src="images/Web.png">
+        <div class="overlay"><div class="portfoliobutton"><center><a href="#"> Portfolio</a></center></div></div>
+    </div>
+    
+    <div class="aboutme" id="about">
+    <img src="images/skull.png">
+        <div id="text">
+    <h1>Hvem er jeg?</h1>
+    <p> Mit Navn er Jakob Fuglsang Christensen og jeg er...</p>
+    
+    <div class="cv">
+        <a href="cv.pdf"> Åben CV</a>
+    </div>
+        </div>
+    </div>
+    
+    <div class="portfolio" id="port">
+        <h1 id="portfolioh1">Min Portfolio</h1>
+                <center>
+        			<div class="pull-right">
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="all">
+					All
+				</button>
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="typo">
+					Typografi
+				</button>
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="workflow">
+					Workflow
+				</button>
+				<button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="design">
+					Design
+				</button>
+                <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="billede">
+					Billede
+				</button>
+			</div>
+            </center>
+			<div class="clearfix"></div>
+
+            <div class="overlayport">
+                <div class="one" data-tag='typo'>
+                    <img src="images/skull.png">
+                    <h2> PRODUKT TITLE</h2>
+                    <hr>
+                    <p> PRODUKT BESKRIVELSE...</p>
+                </div>
+
+                   <div class="one" data-tag='workflow'>
+                    <img src="images/picture.png">
+                    <h2> PRODUKT TITLE</h2>
+                    <hr>
+                    <p> PRODUKT BESKRIVELSE...</p>
+                </div>
+                
+                    <div class="one" data-tag='design'>
+                    <img src="images/Graphic.png">
+                    <h2> PRODUKT TITLE</h2>
+                    <hr>
+                    <p> PRODUKT BESKRIVELSE...</p>
+                </div>
+                
+                    <div class="one" data-tag='billede'>
+                    <img src="images/horse.png">
+                    <h2> PRODUKT TITLE</h2>
+                    <hr>
+                    <p> PRODUKT BESKRIVELSE...</p>
+                </div>
+            </div>
+                        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		                <script src="js/bootstrap-portfilter.min.js"></script>
+    </div>
+    
+    <div class="contact" id="kontakt">
+
+        <h1 id="contacth1"> Kontakt mig!</h1>
+        <img id="kort" src="images/maps.png">
+        <div class="detaljer">
+        <p id="kontakttext">I er altid velkommende til at kontakte mig på mobil, ellers kan i udfylde formularen og sende en mail, det kan være med alt for ris og ros, til spørgsmål om mine grafiske værker.</p>
+          <img src="images/home_icon.png">
+        <p> Lundgårdsvej 11b, Hjørring - 9800</p> <br>
+        
+        <img src="images/mail_icon.png">
+        <p> Jakobfc@Hotmail.com</p> <br>
+        
+        <img src="images/phone_icon.png">
+        <p> +45 60 49 34 77</p> <br>
+        </div>
+        <form>
+        <label for="name"> Fulde navn</label> <br>
+        <input type="text" for="name" placeholder="Jens Erik"> <br>
+        <label for="email"> Email</label> <br>
+        <input type="text" for="email" placeholder="JensErik@gmail.com"> <br>
+        <label for="emne"> Emne </label> <br>
+        <input for="emne" type="text" placeholder="Ledig læreplads"> <br>
+        <label for="besked">Besked</label> <br>
+        <textarea placeholder="Kontakt os venligst, vi ser frem til en mulig samtale..."></textarea> <br>
+        <input type="submit" value="Send">
+        </form>
+
+        
+            <div id="map"></div>
+
+        <script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(57.05118,9.964019);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJFk2XAXreujP-3bWlt2hmYxd3LW_7BVQ&callback=myMap"></script>
+    </div>
+
+</body>
