@@ -156,6 +156,11 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
+.aboutme p {
+    font-size: 20px;
+    font-family: helvetica, arial;
+}
+
 #text {
     width: 50%;
     display: inline-block;
@@ -180,7 +185,7 @@ nav ul li a:hover {
     width: 25%;
     height: 40px;
     background-color: black;
-    margin-top: 55%;
+    margin-top: 29%;
     border-radius: 10px;
     border: solid #e6e5d9 2px;
 }
@@ -391,4 +396,233 @@ footer h3 {
     text-align: center;
     font-family: helvetica, arial;
     padding-top: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .prev, .next {
+        top: 26%;
+    }
+    
+    #contacth1 {
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 768px) {
+    header h1 {
+        padding-top: 6%;
+        font-size: 60px;
+    }
+    
+    .prev, .next {
+        top: 28%;
+    }
+    
+    .aboutme img {
+        width: 33%;
+    }
+    
+    .aboutme h1 {
+        font-size: 60px;
+    }
+    
+    .cv {
+        margin-top: 50%;
+    }
+    
+    .one {
+        width: 32.6%;
+    }
+    
+    .portfolio {
+        height: 900px;
+    }
+    
+    .one h2 {
+        font-size: 20px;
+    }
+    
+    .one p {
+        margin-right: 5%;
+    }
+    
+    .pull-right button {
+        width: 15%;
+    }
+    
+    img#kort {
+       display: none;
+    }
+    
+    #map {
+        width: 40%;
+        float: right;
+        margin-right: 5%;
+        position: relative;
+        bottom: 35%;
+    }
+    
+    .detaljer {
+        width: 40%;
+        margin-right: 5%;
+    }
+    
+    input:focus {
+        width: 48%;
+    }
+    
+    textarea {
+        height: 200px;
+    }
+    
+    textarea:focus {
+        width: 48%;
+    }
+    
+    .contact {
+        height: 750px;
+    }
+    
+    footer {
+        margin-top: 12%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    header h1 {
+        font-size: 50px;
+        padding-top: 13%;
+    }
+    
+    .prev, .next {
+        top: 30%;
+    }
+    
+    #text {
+        width: 80%;
+        float: right;
+        display: inline-block;
+    }
+    
+    .aboutme img {
+        display: none;
+    }
+    
+    .cv {
+        margin-top: 30%;
+    }
+    
+    #portfolioh1 {
+        font-size: 50px;
+    }
+    
+    .one {
+        width: 48%;
+        margin-left: 1%;
+    }
+    
+    .portfolio {
+        height: 800px;
+    }
+    
+    #contacth1 {
+        font-size: 55px;
+    }
+    
+    input {
+        width: 60%;
+    }
+    
+    input:focus {
+        width: 95%;
+    }
+    
+    form {
+        margin-left: 5%;
+    }
+    
+    .detaljer {
+        width: 90%;
+        margin-left: 5%;
+        text-align: left;
+    }
+    
+    .contact {
+        height: 1200px;
+    }
+    
+    textarea {
+        width: 60%;
+    }
+    
+    textarea:focus {
+        width: 95%;
+    }
+    
+    #map {
+        width: 90%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 45px;
+    }
+    
+    .prev, .next {
+        font-size: 15px;
+        top: 31%;
+    }
+    
+    #text h1 {
+        font-size: 35px;
+    }
+    
+    .aboutme {
+        height: 525px;
+    }
+    
+    #contacth1 {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header h1 {
+        font-size: 38px;
+        padding-top: 15%;
+    }
+    
+    .prev, .next {
+        top: 33%;
+    }
+    
+    .cv {
+        margin-top: 15%;
+        width: 40%;
+    }
+    
+    .pull-right button {
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .portfolio {
+        height: 700px;
+    }
+    
+    #contacth1 {
+        font-size: 40px;
+    }
+    
+    .detaljer {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cv {
+        margin-top: 15%;
+    }   
 }
