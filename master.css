@@ -143,64 +143,12 @@ nav ul li a:hover {
   .prev, .next,.text {font-size: 11px}
 }
 
-.thumbnail {
-    width: 12.5%;
-    display: inline-block;
-    margin: 10% 9.7% 0 0;
-}
-
-.thumbnail#first {
-    margin-left: 10%;
-}
-
-.thumbnail img {
-    width: 100%;
-}
-
-.overlay {
-    display:none;
-}
-.thumbnail:hover .overlay {
-    width:100%;
-    height: 160px;
-    border-radius: 50%;
-    background:rgba(0,0,0,.8);
-    position: relative;
-    bottom: 160px;
-    display:inline-block;
-}
-
-.portfoliobutton {
-    background-color: red;
-    width: 66%;
-    height: 25px;
-    border-radius: 5px;
-    margin-left: 16.5%;
-    margin-top: 41%;
-    transition: 0.3s;
-}
-
-.portfoliobutton a {
-    font-family: helvetica, arial;
-    text-decoration: none;
-    color: #e6e5d9;
-    padding-top: 3px;
-    display: block;
-}
-
-.portfoliobutton a:hover {
-    color: red;
-}
-
-.portfoliobutton:hover {
-    background-color: #e6e5d9;
-}
 
 .aboutme {
     margin-top: 10%;
     width: 100%;
     height: 600px;
-    background-color: #d9595f;
+    background-color: #57769c;
 }
 .aboutme img {
     display: inline-block;
@@ -258,7 +206,7 @@ nav ul li a:hover {
 .contact {
     width: 100%;
     height: 900px;
-    background-color: #f5bfbc;
+    background-color: #c4dfec;
     margin-top: 10%;
 }
 
@@ -289,7 +237,6 @@ nav ul li a:hover {
 
 img#kort {
     width: 25%;
-    position: relative;
     float: right;
     margin-top: 3%;
 }
@@ -355,7 +302,7 @@ textarea:focus {
 .portfolio {
     width: 100%;
     height: 800px;
-    background-color: indianred;
+    background-color: #6672ea;
     margin-top: 10%;
 }
 
@@ -431,4 +378,17 @@ textarea:focus {
 
 .pull-right botton:focus {
     border: solid #afae9c 2px;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+footer h3 {
+    color: #e6e5d9;
+    text-align: center;
+    font-family: helvetica, arial;
+    padding-top: 25px;
 }
